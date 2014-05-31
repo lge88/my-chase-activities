@@ -105,5 +105,9 @@ def read_posted_activities_to_df(fname):
   return pandas.DataFrame.from_records(records)
 
 if __name__ == '__main__':
-  adf = read_posted_activities_to_df('my-chase-activities.json')
-  ca = ChaseActivities(adf)
+  records = read_posted_activities_to_df('my-chase-activities.json')
+  cas = ChaseActivities(records)
+
+  cas.get_top_shops_by_total_paid().to_csv('shops-by-total-paid.csv')
+  cas.get_top_shops_by_avg_paid().to_csv('shops-by-avg-paid.csv')
+  cas.get_top_shops_by_freq().to_csv('shops-by-freq.csv')
