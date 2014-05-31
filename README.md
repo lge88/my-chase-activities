@@ -28,9 +28,12 @@ Requirement: python
 Requirement: python, pandas
 
 - analyze_chase_activity_data.py
+
   ```python
+
      cas = ChaseActivities(records)
      cas.get_top_shops_by_freq()
      cas.get_top_shops_by_total_paid()
      cas.get_top_shops_by_avg_paid()
+     
   ```
