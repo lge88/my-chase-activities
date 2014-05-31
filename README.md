@@ -24,7 +24,7 @@ Requirement: python
 
   `records = read_posted_activities('my-chase-activities.json')`
 
-## Analysis & Visualize Data ##
+## Analysis & Visualize Data ... ##
 Requirement: python, pandas
 
 - analyze_chase_activity_data.py
